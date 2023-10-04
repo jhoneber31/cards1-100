@@ -1,0 +1,1603 @@
+@font-face {
+    font-family: "SourceCodePro";
+    src: url(fuentes/SourceCodePro-VariableFont_wght.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'SourceCodePro'; 
+}
+body{
+    background: rgb(39, 42, 43);
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card{
+    background: #F6F4F3;
+    border-radius: 12px;
+    margin:16px 80px 16px 16px;
+}
+.card__title{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22.63px;
+}
+.card__title--Number{
+    font-size: 14px;
+    line-height: 17.6px;
+}
+.card__title--Part{
+    font-size: 12px;
+    line-height: 15.08px;
+}
+.card__title--small{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15.08px;
+    color: #666666;
+}
+.card__subtitle{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17.6px;
+    color: #666666;
+}
+.card__description{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17.63px;
+    color: #666666;
+}
+.card__circle{
+    margin: 0;
+}
+.card__button{
+    width: 80px;
+    height: 31px;
+    border-radius: 12px;
+    border: 1px;
+    background:#31241E;
+    color: white;
+    cursor: grab;
+}
+.card__picture{
+    border-radius: 12px;
+    background-color: #D1C8C1; 
+}
+.card__button--transparent{
+    background: white;
+    color: #3C3C43;
+    border: 1px solid black;
+}
+.tag{
+    width: 36px;
+    height: 15px;
+    padding: 8px;
+    border-radius: 100px;
+    border: 1px solid #3C3C43;
+    background: white;  
+    color: #3C3C43;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    justify-content: center;
+}
+.card__circle--56{
+    width: 56px;
+    height: 56px;   
+}
+.card__circle--32{
+    width: 32px;
+    height: 32px;   
+}
+.card__circle--24{
+    width: 24px;
+    height: 24px; 
+}
+.card__circle--16{
+    width: 16px;
+    height: 16px;   
+}
+.card__circle--40{
+    width: 40px;
+    height: 40px;   
+}
+.card__circle--12{
+    width: 12px;
+    height: 12px;   
+}
+.card__title--2{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20.11px;
+}
+.tag--black{
+    color: #ffffff;
+    background: #3C3C43;   
+}
+.card__tags{
+    display: flex;
+}
+.card__title--extraBig{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25.14px;
+    color: #000000;
+}
+.card__picture--white{
+    background: rgba(222, 222, 222, 0.50);
+}
+.card__title--big{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22.63px;
+}
+/*------------------------------*/
+.card--1{
+    width: 220px;
+    height: 165px;
+    padding: 24px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+.card--1 .card__title{
+    margin: 16px 0;
+}
+/*card 2*/
+.card--2{
+    width: 220px;
+    height: 134px;
+    padding: 24px;
+}
+.card2__header{
+    display: flex;
+    margin-bottom:24px ;
+}
+.card2__header .card__circle{
+    margin-right: 16px;
+}
+.card__titleAndSub{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+}
+/*card 3*/
+.card--3{
+    width: 220px;
+    height: 144px;
+    padding: 24px;
+}
+.card3__header .card__description{
+    margin: 12px 0 24px 0;
+}
+.card3__footer{
+    position: relative;
+}
+.card3__footer .card__button{
+    position: absolute;
+    right: 0;
+}
+/*card 4*/
+.card--4{
+    width: 250px;
+    height: 145px;
+    padding: 24px;
+}
+.card__icons{
+    display: flex;
+    justify-content: center;
+}
+.card__icons .card__picture{
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    margin:auto;
+}
+.card4__footer{
+    margin-top: 24px;
+    text-align: center;
+}
+.card4__footer .card__title{
+    margin-bottom: 4px;
+}
+/*card 5*/
+.card--5{
+    width: 256px;
+    height: 278px;
+    padding: 24px;
+}
+.card5__header .card__picture{
+    width: 256px;
+    height: 173px;
+}
+.card5__footer{
+    margin-top: 24px;
+}
+.card5__footer .card__title{
+    margin-bottom: 4px;
+}
+/*card 6*/
+.card--6{
+    width: 256px;
+    height: 175px;
+    padding: 24px;
+}
+.card6__header{
+    margin-bottom: 21px;
+}
+.card6__partAndTitle{
+    margin-bottom: 24px;
+}
+.card6__footer{
+    position: relative;
+}
+.card__buttons{
+    position: absolute;
+    top:0;
+    right: 0;
+}
+/*card 7*/
+.card--7{
+    width: 256px;
+    height: 164px;
+    padding: 24px;
+}
+.card7__header{
+    margin-bottom: 16px;
+    position: relative;
+}
+.card7__header .card__circle .card__circle--32{
+    position: relative;
+    left: 224px;
+}
+.card7__header .card__title{
+    margin-bottom: 8px;
+}
+.card7__footer{
+    position: relative;
+}
+.card7__footer .card__tags{
+    position: absolute;
+    left: 0;
+}
+.card7__footer .card__tags .tag:nth-child(2){
+    margin: 0 16px;
+}
+/*card 8*/
+.card--8{
+    width: 304px;
+    height: 329px;
+}
+.card8__header{
+    position: relative;
+}
+.card8__header .card__picture{
+    width: 304px;
+    height: 198px;
+    border-radius: 12px 12px 0 0;
+}
+.card8__header .tag--black{
+    position: absolute;
+    top: 18px;
+    right: 18px;
+}
+.card8__footer{
+    padding: 24px;
+}
+.card8__footer .card__title{
+    margin-bottom: 6px;
+}
+/*card 9*/
+.card--9{
+    width: 342px;
+    height: 471px;
+}
+.card9__header{
+    width: 294px;
+    height: 43px;
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+}
+.card9__group1{
+    display: flex;
+    margin-right: 137px;
+    align-items: center;
+}
+.card9__group1 .card__titleAndSub{
+    margin-left: 8px;
+}
+.card9__center .card__picture{
+    width: 342px;
+    height: 198px;
+    border-radius: 0 0 0 0;
+}
+.card9__footer{
+    width: 294px;
+    height: 150px;
+    padding: 24px;
+    position: relative;
+}
+.card9__group2 .card__description{
+    margin: 16px 0 24px 0;
+}
+.card9__footer .card__buttons{
+    position: absolute;
+    right: 24px;
+    top: 140px;
+}
+/*card 10*/
+.card--10{
+    width: 300px;
+    height: 195px;
+    padding: 24px;
+}
+.card10__header{
+    text-align: center;
+    margin-bottom: 24px;
+}
+.card10__footer{
+    width: 300px;
+    height: 126px;
+}
+.card__imgAndDesc{
+    display: flex;
+    position: relative;
+}
+.card__imgAndDesc:first-child{
+    margin-bottom: 18px;
+}
+<<<<<<< HEAD
+.card__imgAndDesc .card__circle--32{
+    margin-right: 12px;
+}
+.card__imgAndDesc .card__title--number{
+    position: absolute;
+    top:5px;
+    left: 10px;
+} 
+/*card 11*/
+.card--11{
+    width: 342px;
+    height: 504px;
+}
+.card11__header .card__picture{
+    width: 342px;
+    height: 222px;
+    border-radius: 12px 12px 0 0;
+}
+.card11__footer{
+    width: 294px;
+    height: 234px;
+    padding: 24px;
+    position: relative;
+}
+.card11__footer .card__description{
+    padding: 16px 0 16px 0;
+}
+.card__rectangle{
+    width: 291px;
+    height: 1px;    
+    background: #C4C4C4;
+}
+.card11__footer .card__subAndTags{
+    width: 264px;
+    height: 57px; 
+    padding: 16px 0 16px 0;
+    position: relative;
+}
+.card11__footer .card__subAndTags .card__tags{ 
+    position: absolute;
+    top: 40px;
+}
+.card11__footer .card__subAndTags .card__tags .tag{
+    margin-right: 8px;
+}
+/*card 12*/
+.card--12{
+    width: 342px;
+    height: 377px;
+}
+.card12__header{
+=======
+
+.cards__container11to20{
+    width: 3845px;
+    height: 504px; 
+    display: flex;
+    margin: 16px 0 0 16px;
+}
+
+/*card 11*/
+.card011{
+    width: 342px;
+    height: 504px; 
+    background: white;
+    border-radius: 12px;
+    margin-right: 80px;
+}
+.card_square{
+    width: 342px;
+    height: 222px; 
+    background: #DEDEDE;
+    border-radius: 12px 12px 0 0;
+}
+.card011__container{
+    margin: 24px;
+    width: 294px;
+    height: 234px;
+    position: relative;
+}
+.card011__header{
+    width: 128px;
+    height: 45px;
+}
+.card011__header .card__title{
+    margin-bottom: 4px;
+}
+.card011__center .card__description{
+    margin: 16px 0;
+}
+.card__rectn{
+    width: 291px;
+    height: 1px;
+    background: #C4C4C4;
+}
+.card011__TagAndSubt{
+    width: 264px;
+    height: 57px;
+    margin: 16px 0;
+    position: relative;
+}
+.card__tags--011{
+    width: 264px;
+    height: 31px;
+    display: flex;
+}
+.card__tags--011 .card__tag{
+    width: 36px;
+    height: 15px;
+    border-radius: 100px;
+    border: 1px solid #3C3C43;
+    margin-right: 8px;
+}
+.card011__footer .card__button{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/*card 12*/
+.card012{
+    width: 342px;
+    height: 377px;
+    background: white;
+    border-radius: 12px;
+    margin-right: 80px;
+}
+.card012__header{
+>>>>>>> d0badf3c3ff21375f3a7564b49dffb9932c3cbce
+    width: 294px;
+    height: 65px;
+    margin: 24px;
+}
+<<<<<<< HEAD
+.card12__header .card__title{
+    margin-bottom: 6px;
+}
+.card12__center .card__picture{
+    width: 342px;
+    height: 198px;
+    border-radius: 0 0 0 0;
+}
+.card12__footer{
+    width: 294px;
+    height: 18px;
+    padding: 24px;
+    display: flex;
+    justify-content: center;  
+}
+.card12__footer .card__logoAndText{
+    display: flex;
+    margin: auto;
+}
+.card12__footer .card__logoAndText .card__subtitle{
+    margin-left: 6px;
+}
+/*card 13*/
+.card--13{
+    width: 256px;
+    height: 355px;
+    padding: 24px;
+}
+.card13__header .card__title{
+    margin-bottom: 4px;
+}
+.card13__pictures{
+    margin-top: 24px;
+    display: flex;
+}
+.card13__pictures .card__picture{
+    width: 119px;
+    height: 113px;
+    border-radius: 12px;
+}
+.card13__pictures .card__picture:first-child{
+    margin-right: 18px;
+}
+/*card 14*/
+.card--14{
+    width: 220px;
+    height: 196px;
+    padding: 24px;
+}
+.card14__center{
+    margin: 24px 0;
+}
+.card14__center .card__title{
+    margin-bottom: 8px;
+}
+.card14__footer{
+    position: relative;
+}
+.card14__footer .card__tags{
+    position: absolute;
+    left: 0;
+}
+.card14__footer .card__tags .tag{
+    margin-right: 8px;
+}
+/*card 15*/
+.card--15{
+    width: 276px;
+    height: 394px;
+}
+.card15__header{
+    width: 228px;
+    height: 46px;
+    padding: 24px;
+}
+.card15__footer .card__picture{
+=======
+.card012__header .card__title{
+    margin-bottom: 6px;
+}
+.card012__center .card_square{
+    width: 342px;
+    height: 198px;
+    border-radius: 0;
+}
+.card012__footer{
+    width: 294px;
+    height: 18px;
+    margin: 24px;
+}
+.card012__tags {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iconAndText{
+    display:flex;
+    margin-right: 24px;
+    align-items: center;
+}
+.iconAndText .card__img--little16{
+    margin: 0 6px 0 0;
+}
+
+.card013{
+    width: 304px;
+    height: 403px;
+    background: white;
+    border-radius: 12px;
+    margin-right: 80px;
+}
+.card013__container{
+    width: 256px;
+    height: 358px;
+    margin: 24px;
+}
+.card013__header{
+    width: 256px;
+    height: 81px;
+}
+.card013__header .card__title{
+    margin-bottom:4px;
+}
+.card__picture{
+    margin-top: 24px;
+    display: flex;
+}
+.card__picture .card_square{
+    width: 119px;
+    height: 113px;
+    border-radius: 12px;   
+}
+.card__picture .card_square:first-child{
+    margin-right: 18px;
+}
+/*card 14*/
+.card014{
+    width: 268px;
+    height: 244px;
+    background: white;
+    border-radius: 12px;
+    margin-right: 80px;
+}
+.card014__container{
+    width: 220px;
+    height: 196px;
+    margin: 24px;
+    position: relative;
+}
+.card014__center{
+    width: 220px;
+    height: 85px;
+    margin: 24px 0;
+}
+.card014__center .card__title{
+    margin-bottom: 8px;
+}
+.card__tags--014{
+    display: flex; 
+}
+.card__tags--014 .card__tag{
+    margin-right: 8px;
+}
+
+/*card 15*/
+.card015{
+    width: 276px;
+    height: 394px;
+    background: white;
+    border-radius: 12px;
+    margin-right: 80px;
+}
+.card015__header{
+    width: 228px;
+    height: 46px;
+    margin: 24px;
+}
+.card015 .card_square{
+>>>>>>> d0badf3c3ff21375f3a7564b49dffb9932c3cbce
+    width: 276px;
+    height: 300px;
+    border-radius: 0 0 12px 12px;
+}
+<<<<<<< HEAD
+/*card 16*/
+.card--16{
+    width: 220px;
+    height: 176px;
+    padding: 24px;
+}
+.card16__header{
+    display: flex;
+}
+.card16__header .card__circle{
+    margin-right: 16px;
+}
+.card--16 .card__description{
+    margin: 24px 0;
+}
+.card16__footer{
+    width: 184px;
+    height: 18px;
+    display: flex;
+}
+.card16__footer .card__logoAndText{
+    display: flex;
+    margin: auto;
+}
+.card16__footer .card__logoAndText .card__subtitle{
+    margin-left: 6px;
+}
+/*card 17*/
+.card--17{
+    width: 381px;
+    height: 344px;
+}
+.card17__header .card__picture{
+=======
+
+/*card 16*/
+.card016{
+    width: 220px;
+    height: 176px;
+    padding: 24px;
+    background: white;
+    border-radius: 12px;
+    margin-right: 80px;
+}
+.card016__header{
+    width: 211px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+}
+.card016__picture{
+    margin-right: 16px;
+}
+.card016__center{
+    margin: 24px 0;
+}
+.card016__footer{
+    display: flex;
+}
+.card016__footer .iconAndText{
+    margin-right: 8px;
+}
+/*card 17*/
+.card017{
+    width: 381px;
+    height: 344px;
+    background: white;
+    border-radius: 12px;
+    margin-right: 80px;
+}
+.card017__header .card_square{
+>>>>>>> d0badf3c3ff21375f3a7564b49dffb9932c3cbce
+    width: 381px;
+    height: 280px;
+    border-radius: 12px 12px 0 0;
+}
+<<<<<<< HEAD
+.card17__footer{
+    display: flex;
+    margin: 16px 24px;
+}
+.card17__imgAndTitle{
+=======
+.card017__footer{
+    width: 333px;
+    height: 32px;
+    padding: 16px 24px;
+    display: flex;
+}
+.card017__imgAndTitle{
+>>>>>>> d0badf3c3ff21375f3a7564b49dffb9932c3cbce
+    display: flex;
+    align-items: center;
+    margin-right: 64px;
+}
+<<<<<<< HEAD
+.card17__imgAndTitle .card__title{
+    margin-left: 12px;
+}
+.card17__footer .card__logoAndText{
+    display: flex;  
+    align-items: center;
+    margin-right: 16px;
+}
+/*card 18*/
+.card--18{
+    width: 258px;
+    height: 239px;
+    padding: 24px;
+}
+.card18__titleAndDesc1{
+    margin: 32px 0 24px 0;
+}
+/*card 19*/
+.card--19{
+    width: 262px;
+    height: 207px;
+    padding: 24px;
+}
+.card19__header{
+    display: flex;
+    margin-bottom: 24px;
+}
+.card19__header .card__titleAndSub{
+    width: 128px;
+    margin-right: 118px;
+}
+.card19__footer{
+    text-align: center;
+}
+/*card 20*/
+.card--20{
+    width: 280px;
+    height: 331px;
+    padding: 24px;
+}
+.card20__header .card__picture{
+    width: 280px;
+    height: 188px;
+}
+.card20__footer{
+    margin-top: 16px;
+}
+.card20__titleAndFree{
+    display: flex;
+    justify-content: space-between;
+}
+.card20__footer .card__description{
+    margin: 16px 0
+}
+.card__loTex{
+    display: flex;
+}
+.card20__footer .card__logoAndText{
+    display: flex;  
+    align-items: center;
+    margin-right: 16px;
+}
+/*card 21*/
+.card--21{
+    width: 256px;
+    height: 336px;
+    padding: 24px;
+}
+.card21__header .card__picture{
+    width: 256px;
+    height: 173px;
+}
+.card21__footer{
+    margin-top: 24px;
+    position: relative;
+}
+.card21__titleAndDesc{
+    margin-bottom: 24px;
+}
+.card21__titleAndDesc .card__title{
+    margin-bottom: 4px;
+}
+/*card 22*/
+.card--22{
+    width: 256px;
+    height: 180px;
+    padding: 24px;
+}
+.card--22 .card__description{
+    margin: 24px 0;
+}
+.card22__footer{
+    position: relative;
+}
+.card22__footer .card__buttons{
+    position: absolute;
+    left: 0;
+}
+/*card 23*/
+.card--23{
+    width: 246px;
+    height: 214px;
+    padding: 24px;
+}
+.card23__header{
+    margin-bottom: 24px;
+}
+.card23__subAndNum{
+    display: flex;
+    justify-content: space-between;
+}
+.card23__footer .card__rectangle{
+    margin: 12px 0;
+    width: 246px;
+}
+/*card 24*/
+.card--24{
+    width: 256px;
+    height: 237px;
+    padding: 24px;
+    position: relative;
+}
+.card24__header .card__description{
+    margin-bottom: 4px;
+}
+.card24__center{
+    margin: 24px 0;
+}
+.card24__partAndText{
+    display: flex;
+    justify-content: space-between;
+}
+.card--24 .card__button{
+    width: 249px;
+    height: 31px;
+    position: absolute;
+    bottom: 24px;
+}
+/*card 25*/
+.card--25{
+    width: 186px;
+    height: 234px;
+    padding: 24px;
+}
+.card--25 .card__picture{
+    width: 186px;
+    height: 172px;
+}
+.card--25 .card__title{
+    margin-top: 16px;
+    text-align: center;
+}
+/*card 26*/
+.card--26{
+    width: 186px;
+    height: 195px;
+    padding: 24px;
+}
+.card--26 .card__title--Number{
+    margin: 24px 0;
+}
+.card26__logAndText .card__logoAndText{
+    display: flex;
+    margin-right: 32px;
+}
+.card26__logAndText{
+    display: flex;
+}
+.card26__logAndText:nth-child(2){
+    margin: 16px 0;
+}
+.card__logoAndText .card__subtitle{
+    margin-left: 6px;
+}
+/*card 27*/
+.card--27{
+    width: 203px;
+    height: 231px;
+    padding: 24px;
+}
+.card27__versionAndImg{
+    display: flex;
+}
+.card27__versionAndImg .card__description{
+    margin-right: 85px;
+}
+.card27__buttonAndTitle{
+    margin: 18px 0;
+}
+.card27__buttonAndTitle .card__button{
+    margin-bottom: 8px;
+}
+.card--27 .card__title--small{
+    margin-top: 40px;
+}
+/*card 28*/
+.card--28{
+    width: 258px;
+    height: 227px;
+    padding: 24px;
+}
+.card__progress{
+    width: 250px;
+    height: 23px;
+}
+.card28__header .card__progress .card__title--small{
+    margin: 2px 0 0 0;
+}
+.card28__header .card__title{
+    margin-bottom: 24px;
+}
+.card28__center{
+    margin: 24px 0;
+}
+.card28__center .card__title--2{
+    margin-bottom: 4px;
+}
+/*card 29*/
+.card--29{
+    width: 220px;
+    height: 141px;
+    padding: 24px;
+    text-align: center;
+}
+.card--29 .card__title{
+    margin: 24px 0 8px 0;
+}
+.card__circleAndNum{
+    position: relative;
+}
+.card__circleAndNum .card__title{
+    position: absolute;
+    left: 97px;
+    bottom: 1px;
+}
+/*card 30*/
+.card--30{
+    width: 304px;
+    height: 308px;
+}
+.card30__header .card__picture{
+    width: 304px;
+    height: 198px;
+    border-radius: 12px 12px 0 0;
+}
+.card30__footer{
+    position: relative;
+    width: 256x;
+    height: 62px;
+    padding: 24px;
+}
+.card30__footer .card__tags{
+    display: flex;
+    left: 24px;
+    margin-bottom: 6px;
+}
+.card30__footer .card__tags .tag--black:nth-child(1){
+    margin-right: 6px;
+}
+/*card 31*/
+.card--31{
+    width: 213px;
+    height: 153px;
+    padding: 24px;
+}
+.card31__header{
+    display: flex;
+    justify-content: space-between;
+}
+.card31__center{
+    margin: 32px 0;
+}
+/*card 32*/
+.card--32{
+    width: 158px;
+    height: 225px;
+    padding: 24px;
+}
+.card32__header{
+    text-align: center;
+}
+.card32__header .card__title{
+    margin-bottom: 6px;
+}
+.card32__center{
+    margin: 24px 0;
+    text-align: center;
+}
+.card32__center .card__load{
+    width: 100px;
+    height: 100px;
+}
+.card32__footer{
+    display: flex;
+    justify-content: space-between;
+}
+.card__logoAndText{
+    display: flex;
+}
+.card__logoAndText .card__subtitle{
+    margin-left: 6px;
+}
+/*card 33*/
+.card--33{
+    width: 360px;
+    height: 333px;
+}
+.card__pictures{
+    display: flex;
+}
+.card__pictures .card__picture{
+    width: 120px;
+    height: 120px;
+    border-radius: 0;
+}
+.card__pictures .card__picture:nth-child(1){
+    border-radius: 12px 0 0 0;
+}
+.card__pictures .card__picture:nth-child(3){
+    border-radius: 0 12px 0 0;
+}
+.card33__footer{
+    width: 312px;
+    height: 45px;
+    padding: 24px;
+}
+.card33__footer .card__title{
+    margin-bottom: 4px;
+}
+/*card 34*/
+.card--34{
+    width: 138px;
+    height: 191px;
+    padding: 24px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.card34__header .card__picture{
+    width: 56px;
+    height: 56px;
+    border-radius: 8px;
+}
+.card34__center{
+    margin: 24px 0;
+}
+/*card 35*/
+.card--35{
+    width: 128px;
+    height: 196px;
+    padding: 24px;
+}
+.card35__header{
+    margin-bottom: 56px;
+}
+.card35__footer{
+    width: 128px;
+    height: 48px;
+}
+.card35__footer .card__subtitle{
+    color: #3C3C43;
+}
+/*card 36*/
+.card--36{
+    width: 200px;
+    height: 230px;
+    padding: 24px;
+}
+.card36__header{
+    margin-bottom: 64px;
+}
+.card36__header .card__picture{  
+    width: 48px;
+    height: 48px;
+    border-radius: 6px;
+}
+.card36__footer .card__rectangle{
+    margin: 10px 0;
+    width: 200px;
+}
+/*card 37*/
+.card--37{
+    width: 148px;
+    height: 183px;
+    padding: 24px;
+}
+.card37__header .card__picture{
+    width: 48px;
+    height: 48px;
+    border-radius: 6px;
+}
+.card37__center{
+    margin: 32px 0;
+}
+.card37__footer .card__button{
+    width: 148px;
+}
+/*card 38*/
+.card--38{
+    width: 202px;
+    height: 188px;
+    padding: 24px;
+}
+.card38__header{
+    display: flex;
+    margin-bottom: 23px;
+}
+.card38__header .card__circle--40{
+    margin-right: 118px;
+}
+.card38__circles{
+    display: flex;
+}
+.card38__circles .card__circle--12:nth-child(2){
+    margin: 0 4px;
+}
+.card38__footer .card__description{
+    margin: 6px 0 24px 0;
+}
+.card38__logAndText{
+    display: flex;
+}
+.card38__logAndText .card__logoAndText:nth-child(1){
+    margin-right: 24px;
+}
+/*card 39*/
+.card--39{
+    width: 291px;
+    height: 237px;
+    padding: 24px;
+    display: flex;
+}
+.card39__aside{
+    margin-right: 24px;
+}
+.card39__titleAndSub{
+    margin-bottom: 16px;
+}
+.card39__list ul li{
+    margin-bottom: 8px;
+}
+/*card 40*/
+.card--40{
+    width: 220px;
+    height: 216px;
+    padding: 24px;
+}
+.card40__center{
+    margin: 24px 0;
+}
+.card40__center .card__title{
+    margin-bottom: 4px;
+}
+/*card 41*/
+.card--41{
+    width: 200px;
+    height: 271px;
+    padding: 24px;
+}
+.card41__header{
+    margin-bottom: 24px;
+}
+.card41__header .card__title--extraBig{
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 40.22px;
+    margin-top: 24px;
+}
+.card41__footer .card__rectangle{
+    margin: 12px 0;
+    width: 200px;
+}
+.card41__footer .card__description:last-child{
+    margin-top: 12px;
+}
+/*card 42*/
+.card--42{
+    width: 268px;
+    height: 278px;
+    background: none;
+    position: relative;
+}
+.card--42 .card__picture{
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    top:0;
+    left: 40%;
+}
+.card42__subcontainer{
+    width: 220px;
+    height: 177px;
+    padding: 48px 24px 24px 24px;
+    background: white;
+    border-radius: 12px;
+    position: relative;
+    top: 29px;  
+}
+.card42__header{
+    text-align: center;
+}
+.card42__header .card__title{
+    margin-bottom: 4px;
+}
+.card42__center{
+    margin: 32px 0;
+}
+.card42__center .card__progress .card__bar{
+    width: 201px;
+    height: 6px;
+}
+.card42__footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card42__footer .card42__logoAndText{
+    display: flex;
+}
+.card42__logoAndText .card__logoAndText:first-child{
+    margin-right: 16px;
+}
+/*card 43*/
+.card--43{
+    width: 200px;
+    height: 224px;
+    padding: 24px;
+}
+.card43__header .card__subtitle{
+    margin-bottom: 2px;
+}
+.card43__center{
+    margin: 24px 0;
+}
+.card43__logoAndText{
+    display: flex;   
+    justify-content: space-around;
+}
+.card43__logoAndText .card__logoAndText{
+    flex-direction: column;   
+    align-items: center;
+}
+.card43__logoAndText:first-child{
+    margin-bottom: 12px;
+}
+/*card 44*/
+.card--44{
+    width: 200px;
+    height: 189px;
+    padding: 48px 24px 48px 24px;
+}
+.card44__header .card__rectangle{
+    width: 42px;
+    height: 2px;
+    background: #3C3C43;
+}
+.card44__header{
+    margin-bottom: 32px;
+}
+.card44__titleAndDesc:first-child{
+    margin-bottom: 16px;
+}
+/*card 45*/
+.card--45{
+    width: 304px;
+    height: 293px;
+    position: relative;
+}
+.card45__header{
+    position: absolute;
+    top: 32px;
+    left: 32px;
+}
+.card45__header .card__button{
+    margin-top: 16px;
+    width: 148px;
+    height: 31px;
+}
+/*card 46*/
+.card--46{
+    width: 200px;
+    height: 226px;
+    padding: 24px;
+}
+.card46__header .card__title{
+    margin-bottom: 6px;
+}
+.card46__center{
+    margin: 28px 0;
+}
+.card46__center .card__rectangle{
+    width: 200px;
+    height: 1px;
+}
+.card46__footer .card__logoAndText:nth-child(2){
+    margin: 16px 0;
+}
+/*card 47*/
+.card--47{
+    width: 292px;
+    height: 429px;
+}
+.card47__header{
+    position: relative;
+}
+.card47__header .card__picture{
+    width: 292px;
+    height: 300px;
+    border-radius: 12px 12px 0 0;
+}
+.card47__partAndTitle{
+    width: 128px;
+    height: 92px;
+    position: absolute;
+    top: 24px;
+    left: 24px;
+}
+.card47__footer{
+    width: 244px;
+    height: 81px;
+    padding: 24px;
+}
+.card47__footer .card__title{
+    margin-bottom: 4px;
+}
+/*card 48*/
+.card--48{
+    width: 277px;
+    height: 327px;
+}
+.card48__header{
+    position: relative;
+    margin-bottom: 24px;
+}
+.card48__header .card__picture{
+    width: 277px;
+    height: 72px;
+    border-radius: 12px 12px 0 0;
+}
+.card48__header .card__circle--56{
+    position: absolute;
+    top:0px;
+}
+.card48__footer{
+    width: 229px;
+    height: 179px;
+    padding: 24px;
+}
+.card48__titleAndDesc{
+    text-align: center;
+    margin-bottom: 24px;
+}
+.card48__logReclog{
+    display: flex;
+    justify-content: space-around;
+}
+.card48__logReclog .card__logoAndText{
+    display: flex;
+    flex-direction: column;   
+    align-items: center;
+}
+.card48__logReclog .card__rectangle{
+    width: 1px;
+    height: 36px;
+}
+.card48__logReclog .card__logoAndText:first-child{
+    margin-bottom: 16px;
+}
+/*card 49*/
+.card--49{
+    width: 303px;
+    height: 287px;
+    padding: 32px 24px;
+}
+.card49__header{
+    margin-bottom: 32px;
+}
+.card49__footer{
+    width: 303px;
+    height: 232px;
+}
+.card49__pictAndTiDesc{
+    display: flex;
+    margin-bottom: 24px;
+}
+.card49__pictAndTiDesc .card__picture{
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+    margin-right: 16px;
+}
+.card49__titleAndDesc .card__description{
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.card49__titleAndDesc .card__subtitle{
+    color: #181818;
+}
+/*card 50*/
+.card--50{
+    width: 419px;
+    height: 350px;
+    display: flex;
+}
+.card50__contLeft{
+    width: 171px;
+    height: 158px;
+    padding: 96px 24px;
+}
+.card50__contLeft .card__description{
+    margin: 16px 0;
+}
+.card50__contLeft .card__button{
+    width: 118px;
+    height: 31px;
+}
+.card50__contRight .card__picture{
+    width: 200px;
+    height: 350px;
+    border-radius: 0 12px 12px 0;
+}
+=======
+.card017__imgAndTitle .card__img--little32{
+    margin-right: 12px;
+}
+.card017__iconAndText{
+    display: flex;
+    margin-right: 16px;
+    align-items: center;
+}
+.card017__iconAndText .card__img--little16{
+    margin: 0 4px 0 0;
+}
+/*card 18*/
+.card018{
+    width: 258px;
+    height: 239px;
+    padding: 24px;
+    background: white;
+    border-radius: 12px;
+    margin-right: 80px;
+}
+.card018__header{
+    margin-bottom: 32px;
+}
+.card__title2{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20.11px;
+}
+.card018__titleAndDesc:first-child{
+    margin-bottom: 24px;
+}
+.card018__titleAndDesc .card__title2{
+    margin-bottom: 6px;
+}
+
+/*card 19*/
+.card019{
+    width: 262px;
+    height: 207px;
+    padding: 24px;
+    background: white;
+    border-radius: 12px;
+    margin-right: 80px;
+}
+.card019__header{
+    width: 262px;
+    height: 43px;
+    margin-bottom: 24px;
+    position: relative;
+}
+.card019__titleAndSub{
+    margin-right: 118px;
+}
+.card019__header .card__img--little16{
+    margin: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.card019__img{
+    text-align: center;
+}
+/*card 20*/
+.card020{
+    width: 280px;
+    height: 331px;
+    padding: 24px;
+    background: white;
+    border-radius: 12px;
+    margin-right: 80px;
+}
+.card020__header .card_square{
+    width: 280px;
+    height: 188px;
+    border-radius: 12px;
+}
+.card020__footer{
+    width: 280px;
+    height: 127px;
+    margin-top: 16px;
+}
+.card020__titleAndSub{
+    display: flex;
+    position: relative;
+}
+.card020__titleAndSub .card__title2{
+    margin-left: 24px;
+    font-weight: 600;
+    position: absolute;
+    right: 0;
+}
+.card020__footer .card__description{
+    margin: 16px 0;
+}
+.card020__tags{
+    display: flex;
+}
+.card020__iconAndText{
+    width: 200px;
+    height: 18px;
+    display: flex;
+}
+.card020__iconAndText .card__img--little16{
+    margin: 0;
+}
+.card020__iconAndText .card__description{
+    margin: 0 0 0 6px;
+}
+
+>>>>>>> d0badf3c3ff21375f3a7564b49dffb9932c3cbce
